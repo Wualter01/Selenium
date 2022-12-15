@@ -10,6 +10,7 @@ public class c1_Locators {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
+        driver.manage().window().maximize();
         driver.get("https://google.com");
         //linkText locator
         driver.findElement(By.linkText("Gmail")).click();
