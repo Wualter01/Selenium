@@ -7,25 +7,29 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverUtil {
 
-    //create a util that takes browser type and create a connection between browser and selenium
+   /*
+   create connection between driver and browser
+   WebDriverManager. chromedriver () .setup ();
+   WebDriver driver =new ChromeDriver);
+   driver.get ("https://www.google. com")
 
-    public static WebDriver getDriver(String browser){
-        //we are saying if we choose to use chrome driver go ahead and set it up
-        if(browser.equalsIgnoreCase("chrome")){
-//chrome browser needs to be setup
+   //create a util that takes browser type and create connection between browser and selenium
+    */
+
+    public static WebDriver getDriver(String browser){//static so this wont change and i can call with reference of
+        //class. specifier is WebDriver it can be anything int long etc.. and name is getDriver
+        if (browser.equalsIgnoreCase("chrome")){
+            //this is saying is String =chrome then setup our chrome browser EX:WebDriverUtil.getDriver("if this string
+            //equals chrome driver then go ahead and set it up".)
             WebDriverManager.chromedriver().setup();
-            //since we didnt use void we must have a return type hence return new chromedriver
             return new ChromeDriver();
         }else if (browser.equalsIgnoreCase("firefox")){
-            //set up for fire fox
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         }else{
-            System.out.println("browser does not exist or is not setup in utils");
-            System.out.println("check browser name");
-            System.out.println("browser= "+browser);
-            return null;
-            //all of them return either a browser or must return null because we did not use void
+            System.out.println("Browser not setup yet! or does not exist!");
+            System.out.println("browser = "+browser);
+            return null; //we can have null as a return statement
         }
     }
 
