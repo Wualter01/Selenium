@@ -13,7 +13,7 @@ public class c5_cssSelector {
         driver.get("https://amazon.com");
         //css locator
         driver.findElement(By.cssSelector("input[dir='auto']")).sendKeys("Tv");
-        //3-tagname#value # means id in css
+        //3-tagName#value # means id in css
         //driver.findElement(By.id("twotabsearchtextbox"));
         //driver.findElement(By.cssSelector("input[id='thwtabsearchbox']"));
         //below is another way to use css selector with# using id after tag and then id
