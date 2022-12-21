@@ -34,5 +34,6 @@ public class c3_radio_Buttons {
             System.out.println("honda button is selected, verification failed");
 
         }
+        driver.close();
     }
 }

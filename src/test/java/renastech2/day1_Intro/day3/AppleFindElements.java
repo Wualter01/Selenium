@@ -22,7 +22,8 @@ public class AppleFindElements {
         iphoneButton.click();
 
         //print text of all links
-        //a tag name mean it has links
+        //a tag name mean it has links, we checked and a tag carries linksTexts
+        //we used FindElements with plural and used xPath child to parent to get all a tags
         List<WebElement> allLinks =driver.findElements(By.xpath("//body//a"));
 
         int linkWithText=0;//to count elements with text
