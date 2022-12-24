@@ -1,12 +1,8 @@
 package renastech2.day1_Intro.day3;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import renastech2.day1_Intro.utilities.BrowserUtils;
 import renastech2.day1_Intro.utilities.WebDriverUtil;
-
-import java.sql.DriverManager;
 
 public class CssLocator {
     public static void main(String[] args) {
