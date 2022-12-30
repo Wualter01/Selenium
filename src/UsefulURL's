@@ -15,3 +15,8 @@ HOW MANY TYPES OF DROPDOWN ARE THERE?
 -use select class to locate them.
 2- HTML dropdowns: these are the dropdowns that are created NOT USING <select>
 - These dropdowns are handled just like any other webElement you will see on the page.
+
+Web tables
+//table [@id='ct10o_MainContent_orderGrid']/tbody/tr
+//table [@id-'ctlO0 _MainContent_orderGrid'J//tr -> is the same as above we dont pass tbody and instead pass //tr it
+means the same thing
