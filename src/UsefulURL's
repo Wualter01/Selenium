@@ -21,3 +21,35 @@ Web tables
 //table [@id='ct10o_MainContent_orderGrid']/tbody/tr
 //table [@id-'ctlO0 _MainContent_orderGrid'J//tr -> is the same as above we dont pass tbody and instead pass //tr it
 means the same thing
+
+
+Java scrip uses when you cant do certain actions with selenium
+for some actions that selenium wont be able to handle
+
+  JavaScriptExecutor is an Interface that helps to execute JavaScript through Selenium Webdriver.
+ JavaScriptExecutor provides two methods "executescript" & "executeAsyncScript" to run javascript on the
+ selected window or current page.This method executes JavaScript in the context of the currently selected frame
+ or window in Selenium.
+
+ JavaScriptExecutor:
+ 1- We create javascriptExecutor object and we cast our WebDriver type instance into JavascriptExecutor type
+ JavascriptExecutor ]s = (JavascriptExecutor) driver;
+ 2- Then we have access to the methods that are coming from JavascriptExecutor interface js.executeScript
+ (Script, Arguments); For arguments scrollDown, click ,window.open etc..
+ -- you will prefer to use when you are not able to do some actions with selenium
+ Scroll in Selenium?
+ 1-JSExecutor
+ -with selenium itself you are not able to scroll in the page you need
+ The syntax of ScrollBy) methods is :
+
+ Scroll in Selenium?
+ 1-JSExecutor
+ -with selenium itself you are not able to scroll in the page you need
+ 1-jsExecutor
+ The syntax of ScrollBy() methods is :
+
+executeScript("window.scrollBy(x-pixels,y-pixels)");
+x-pixels is the number at x-axis,
+it moves left if number is positive and
+it move right if number is negative y-pixels is the number at y-axis,
+it moves down if number is positive and it move to the up if number is in negative
