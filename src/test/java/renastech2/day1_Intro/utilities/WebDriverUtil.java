@@ -17,7 +17,8 @@ public class WebDriverUtil {
     */
 
     public static WebDriver getDriver(String browser){//static so this wont change and i can call with reference of
-        //class. specifier is WebDriver it can be anything int long etc.. and name is getDriver
+        //class. specifier is WebDriver it can be anything int long etc.. and name is getDriver must return type of
+        //web browser
         if (browser.equalsIgnoreCase("chrome")){
             //this is saying is String =chrome then setup our chrome browser EX:WebDriverUtil.getDriver("if this string
             //equals chrome driver then go ahead and set it up".)
